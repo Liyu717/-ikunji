@@ -1,31 +1,31 @@
-name: OnePlus SM8750 Build SuKiSu SUSFS
+name: OnePlus SM8650 Build SuKiSu SUSFS
 on:
   workflow_dispatch:
     inputs:
       CPU:
         description: "分支"
         required: true
-        default: 'sm8750'
+        default: 'sm8650'
       FEIL:
         description: "配置文件"
         required: true
-        default: 'oneplus_13'
+        default: 'oneplus_ace5'
       CPUD:
         description: "处理器代号"
         required: true
-        default: 'sun'
+        default: 'pineapple'
       ANDROID_VERSION:
         description: "内核安卓版本"
         required: true
-        default: 'android15'
+        default: 'android14'
       KERNEL_VERSION:
         description: "内核版本"
         required: true
-        default: '6.6'
+        default: '6.1'
       KERNEL_NAME:
         description: "修改内核名称"
         required: true
-        default: '-android15-8-g013ec21bba94-abogki383916444'
+        default: '-android14_11-o_gc3f9a27f7c1f'
 
 jobs:
   build:
